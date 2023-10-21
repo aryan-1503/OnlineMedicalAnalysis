@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Medical Analysis</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="all">
+        <div class="heading">
+            <h1><strong>Online Medical Analysis</strong></h1>
+            <button>Login/Signup</button>
+        </div>
+
+        <div class="content">This is a Online Medical Diagnosis which focuses on the analysis and provides relevant medical articles and diagnosis data.(other info...) </div>
+        <div class="imageclass">
+            <div id="img1"><img src="../static/images/lungs.jpeg" alt="lung" style="width: 310px"></div>
+            <div id="img2"><img src="../static/images/thyroid.jpeg" alt="thyroid"></div>
+            <div id="img3"><img src="../static/images/heart.jpeg" alt="heart" style="width: 270px"></div>
+        </div>
+
+        <div class="buttonsclass">
+            <div class="buttons" id="b1">
+                <button onclick="redirectToLungs()">Lung Cancer</button>
+            </div>
+
+            <div class="buttons" id="b2">
+                <button onclick="redirectToThyroid()">Thyroid</button>
+            </div>
+
+            <div class="buttons" id="b3">
+                <button onclick="redirectToHeart()">Heart</button>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function redirectToThyroid(){
+            window.location.href = "thyroid.html";
+        }
+        function redirectToLungs(){
+            window.location.href = "lungs.html"
+        }
+        function redirectToHeart(){
+            window.location.href = "heart.html"
+        }
+    </script>
+</body>
+</html>
+
